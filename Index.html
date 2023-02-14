@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+</head>
+
+<body class="grid grid-cols-12">
+    <aside class="row-span-2 bg-slate-900  h-screen col-span-2">
+        <figure>
+            <img src="" alt="">
+        </figure>
+        <ul>
+            <li class="text-white text-xl m-4"><span></span> Programas</li>
+            <li class="text-white text-xl m-4"><span></span>Recursos UI</li>
+            <li class="text-white text-xl m-4"><span></span>Libros</li>
+            <li class="text-white text-xl m-4"><span></span>Blog</li>
+            <li class="text-white text-xl m-4"><span></span>Juegos</li>
+            <li class="text-white text-xl m-4"><span></span>Otros</li>
+        </ul>
+    </aside>
+
+    <header class="col-span-10 row-span-1 bg-slate-600 h-16 ">
+        <form class="flex justify-end m-3">
+            <input class="w-80 h-10 p-2 rounded-lg" type="text" placeholder="Buscar">
+        </form>
+        <button></button>
+    </header>
+
+    <main class="col-span-10 row-span-1 bg-slate-300 p-10 h-screen">
+        <header>
+
+            <h1 class="text-3xl font-semibold m-2 flex justify-center">Titulo de la sección</h1>
+            <nav>
+                <ul class="flex justify-center">
+                    <li class="m-4">Todos</li>
+                    <li class="m-4">Interfaz<span class="bg-purple-700 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UI</span></li>
+                    <li class="m-4">Experiencia<span class="bg-cyan-400 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UX</span></li>
+                    <li class="m-4">Código</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="grid grid-cols-5 gap-4">
+            <div class="max-w-sn h-auto rounded-xl overflow-hidden shadow-lg bg-white p-6">
+                <div class="flex flex-row justify-end items-center bg-amber-400 w-fit text-white px-1,5  rounded font-semibold"><p class="m-1">5</p><img class="h-3 m-1" src="img/star-solid.svg" alt=""></div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/480px-Figma-logo.svg.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Figma</h3>
+            </div>
+
+        </section>
+        <!-- ---------------------- libro------------------- -->
+        <section class="grid grid-cols-5 gap-4 mt-4">
+        <div class="max-w-sn h-auto rounded-xl overflow-hidden shadow-lg bg-white p-6">
+            <Figure class="w-full h-48 flex justify-center items-center">
+                <img class="scale-100 max-h-40" src="img/41JqpHpc8RL._SX330_BO1,204,203,200_.jpg" alt="Portada libro">
+            </Figure>
+            <h3 class="text-xl font-bold my-4 flex justify-center text-slate-900 ">Sprint: El método para resolver problemas y testar nuevas ideas en solo 5 días</h3>
+            <p>Jake Knapp, John Zeratsky, Braden Kowitz</p>
+            
+        </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
