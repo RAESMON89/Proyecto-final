@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Ficha libro</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -13,7 +13,7 @@
     <aside class="bg-slate-900 h-full col-span-2 w-2/12 hidden lg:block fixed">
         <section class="h-4/5">
             <figure class="w-full mb-10 mt-8 ">
-                <a href="Index.html"><img class="w-40 m-auto hover:text-amber-500 hover:text-xl hover:animate-bounce hover:h-auto"
+                <a href="Index.html"><img class="w-40 m-auto hover:text-amber-500 hover:text-xl hover:animate-bounce"
                         src="img/Logouxui.png" alt=""></a>
             </figure>
             <ul>
@@ -74,55 +74,152 @@
         </div>
 
     </header>
-    <main class="bg-slate-100 p-10 min-h-screen absolute right-0 w-full mt-16 lg:w-10/12">
+    <!-- ---------------Ficha libro -------------------- -->
+    <main class="p-5 min-h-screen absolute right-0 w-full mt-16 lg:w-10/12 sm:p-10">
+        <section class="flex flex-col-reverse mb-10 sm:flex-row">
 
-        <!-- ---------------------BANNER --------------------- -->
+            <figure class="mt-5 sm:m-0 sm:w-80">
+                <img class="w-full m-auto" src="img/nomehagaspensar.jpg" alt="">
+            </figure>
+            <div class="sm:ml-10 sm:w-4/5">
+                <h2 class="text-4xl font-bold mb-1">No me hagas pensar. Actualización</h2>
+                <div class="w-full flex flex-columns justify-between items-center">
+                    <div>
+                        <h5 class="mb-2">Steve Krug</h5>
+                        <div class="flex flex-columns items-center justify-between mt-2 mb-4">
+                            <figure class="h-5 flex flex-columns">
+                                <img class="h-full" src="img/star-solid.svg" alt="">
+                                <img class="h-full" src="img/star-solid.svg" alt="">
+                                <img class="h-full" src="img/star-solid.svg" alt="">
+                                <img class="h-full" src="img/star-solid.svg" alt="">
+                                <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+                            </figure>
+                        </div>
+                    </div>
 
-        <section class="flex flex-col h-100 mb-12 xl:flex-row xl:h-80">
-            <div class="bg-zinc-900 flex flex-col w-full xl:w-7/12 md:flex-row md:flex-row">
-                <div class="w-full p-6 xl:w-6/12">
-                    <p class="text-white">Encuesta - Febrero</p>
-                    <p class="text-4xl font-semibold text-white mb-6">¿Qué programa utilizas para diseñar prototipos?
+                    <img class="h-8 ml-4 hover:animate-bounce hover:text-amber-500 hover:fill-red-900"
+                        src="img/heart-light 1.svg" alt="">
+
+                </div>
+                <div class="bg-cyan-400 text-sm text-center p-0,5 px-1 text-white rounded-sm w-40">Experiencia de
+                    usuario</div>
+                <div>
+                    <p class="my-2">Cientos de miles de diseñadores y desarrolladores web se han basado en la guía del
+                        gurú
+                        de usabilidad Steve Krug para ayudarles a entender los principios de la navegación intuitiva y
+                        diseño Web. Un libro eminentemente práctico, uno de los más queridos y más recomendados sobre el
+                        tema. Ahora Steve regresa con nueva perspectiva para reexaminar los principios Web actualizados
+                        y un
+                        nuevo capítulo de usabilidad móvil. Profusamente ilustrado... y lo mejor de todo divertido de
+                        leer.
+                        <span class="hidden xl:block" id="texto-oculto">Si lo ha leído antes, encontrará una nueva visión de
+                            los principios esencial para los
+                            diseñadores Web y desarrolladores de todo el mundo.
+                            Si nunca lo ha leído, verá por qué tantas personas han dicho que debería ser lectura
+                            obligatoria
+                            para cualquiera que trabaje en sitios Web. "Después de leerlo durante un par de horas y
+                            poner
+                            sus ideas en práctica en los últimos cinco años, puedo decir que ha hecho más para mejorar
+                            mis
+                            habilidades como diseñador Web que cualquier otro libro." -Jeffrey Zeldman, autor de Diseño
+                            con
+                            Estándares Web.
+                        </span>
                     </p>
-                    <button class="bg-amber-500 w-fit text-white py-2 px-10 rounded flex justify-center">Votar</button>
+                    <button class="text-sky-500 mb-2 xl:hidden after:content-['más']"
+                        onclick="document.getElementById('texto-oculto').classList.toggle('hidden');this.classList.toggle('after:content-[\'más\']');this.classList.toggle('after:content-[\'menos\']')">Mostrar
+                    </button>
                 </div>
-                <figure class="w-full flex flex-wrap content-end  xl:w-6/12">
-                    <img src="img/prototipo.png" alt="">
-                </figure>
-            </div>
-            <div class="flex  xl:flex-row xl:w-5/12 xl:flex-wrap">
-                <div class="flex w-full">
-                    <div class="bg-white basis-1/3 p-6 flex justify-center"><img class="w-16 m-auto"
-                            src="img/480px-Figma-logo.svg.png" alt="">
-                    </div>
-                    <div class="bg-fuchsia-300 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                            src="img/Adobe_XD_CC_icon.svg.png" alt="">
-                    </div>
-                    <div class="bg-amber-200 basis-1/3  p-6 flex justify-center"> <img class="w-20 m-auto"
-                            src="img/sketch.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="w-full hidden sm:flex">
-                    <div class="flex w-full">
-                        <div class="bg-green-200 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/penpot.png" alt="">
-                        </div>
-                        <div class="bg-pink-300  basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/invision.jpeg" alt="">
-                        </div>
-                        <div class="bg-sky-100 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/marvel.png" alt="">
-                        </div>
-                    </div>
-                </div>
+                
+                <h2 class="text-3xl font-semibold mb-1">20,85 €</h2>
             </div>
         </section>
 
-        <!-- ------------------------SECCIÓN 1 ----------------------------- -->
+        <div class="h-1 border-b-2 border-dotted border-gray-300 mb-5 hidden lg:block lg:table-auto"></div>
+
         <section>
-            <h2 class="text-3xl font-semibold mb-5">Libros destacados</h2>
-            <!-- <section class="grid grid-cols-4 gap-8 my-4"> -->
-            <section class="grid grid-cols-1 mb-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+            <table class="w-full table-auto hidden lg:table">
+                <tr>
+                    <th>ISBN-10</th>
+                    <th>ISBN-13</th>
+                    <th>Edición</th>
+                    <th>Editorial</th>
+                    <th>Fecha de publicación</th>
+                    <th>Idioma</th>
+                    <th>Dimensiones</th>
+                    <th>Longitud de impresión</th>
+                </tr>
+                <tr class=" h-16">
+                    <td class="h-8"><img class="h-full mx-auto" src="img/barcode-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/barcode-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/hashtag-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/tree-city-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/calendar-lines-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/earth-americas-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/ruler-combined-light.svg" alt=""></td>
+                    <td class="h-8"><img class="h-full mx-auto" src="img/files-light.svg" alt=""></td>
+                </tr>
+                <tr class=" h-8 text-center">
+                    <td>8441537275</td>
+                    <td>978-8441537279</td>
+                    <td>edición</td>
+                    <td>ANAYA MULTIMEDIA</td>
+                    <td>24 septiembre 2015</td>
+                    <td>Español</td>
+                    <td>17 x 1.7 x 22.5 cm</td>
+                    <td>216 páginas</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="h-1 border-b-2 border-dotted border-gray-300 my-5  hidden lg:block"></div>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold my-4">Comparardor de precios</h2>
+            <div class=" p-2 bg-slate-50 sm:p-5">
+
+                <div class="flex flex-columns justify-between p-4 bg-white rounded-lg my-2">
+                    <div class="h-10 flex flex-columns items-center">
+                        <img class="h-full mr-2" src="img/logo-amazon-2000-actualidad-1024x576.png" alt="">
+                        <p class="text-lg ml-2 hidden sm:block">Amazon</p>
+                    </div>
+                    <div class="flex flex flex-columns items-center">
+                        <p class="text-xl font-semibold mr-2">20,85 €</p>
+                        <button
+                            class="bg-amber-400 w-fit text-white py-2 px-4 rounded flex justify-center ml-2">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="flex flex-columns justify-between p-4 bg-white rounded-lg my-2 ">
+                    <div class="h-10 flex flex-columns items-center">
+                        <img class="h-full mr-2" src="img/casa-del-libro-logo-black-friday.jpg" alt="">
+                        <p class="text-lg ml-2 hidden sm:block">Casa del libro</p>
+                    </div>
+                    <div class="flex flex flex-columns items-center">
+                        <p class="text-xl font-semibold mr-2">20,85 €</p>
+                        <button
+                            class="bg-amber-400 w-fit text-white py-2 px-4 rounded flex justify-center ml-2">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="flex flex-columns justify-between p-4 bg-white rounded-lg my-2 ">
+                    <div class="h-10 flex flex-columns items-center">
+                        <img class="h-full mr-2" src="img//Fnac_Logo.svg.png" alt="">
+                        <p class="text-lg ml-2 hidden sm:block">FNAC</p>
+                    </div>
+                    <div class="flex flex flex-columns items-center">
+                        <p class="text-xl font-semibold mr-2">20,85 €</p>
+                        <button
+                            class="bg-amber-400 w-fit text-white py-2 px-4 rounded flex justify-center ml-2">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-5">Los usuarios que vieron este producto también vieron</h2>
+            <section class="grid grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
 
                 <!-- ----------CARD 1 --------------------- -->
                 <a href="ficha_libro.html" class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
@@ -186,7 +283,7 @@
                 <!-- ----------CARD 4 --------------------- -->
                 <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6 hidden 2xl:block">
                     <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-40" src="img/diseñoeficiente.jpg" alt="Portada libro">
+                        <img class="scale-100 max-h-40" src="img/diseñointeligente.jpg" alt="Portada libro">
                     </Figure>
                     <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">UX Una metodología de diseño
                         eficiente</h3>
@@ -203,52 +300,8 @@
                     </div>
                 </div>
             </section>
-            <button class="w-full flex justify-end mb-8 hover:text-amber-500"><a href="Libros.html"> Ver más recursos</a></button>
-        </section>
-
-        <!-- ------------------------SECCIÓN 2 ----------------------------- -->
-        <section>
-            <h2 class="text-3xl font-semibold mb-5">Programas más populares</h2>
-            <!-- <section class="grid grid-cols-4 gap-8 my-4"> -->
-            <section class="grid grid-cols-1 mb-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
-
-                <!-- ----------CARD 1 --------------------- -->
-                <a href="ficha_libro.html" class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/tailwind.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">TailwindCSS</h3>
-
-                </a>
-                <!-- ----------CARD 2 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/Hotjar.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">Hotjar</h3>
-
-                </div>
-                <!-- ----------CARD 3 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden  hover:shadow-lg hover:duration-200 bg-white p-6 hidden lg:block">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/userzoom.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">UserZoom</h3>
-
-                </div>
-                <!-- ----------CARD 4 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6 hidden 2xl:block">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/480px-Figma-logo.svg.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">Figma</h3>
-                </div>
-            </section>
-            <button class="w-full flex justify-end mb-8 hover:text-amber-500"><a href="programas.html"> Ver más recursos</a></button>
         </section>
 
     </main>
 
 </body>
-
-</html>

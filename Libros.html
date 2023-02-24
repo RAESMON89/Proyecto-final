@@ -13,7 +13,7 @@
     <aside class="bg-slate-900 h-full col-span-2 w-2/12 hidden lg:block fixed">
         <section class="h-4/5">
             <figure class="w-full mb-10 mt-8 ">
-                <a href="Index.html"><img class="w-40 m-auto hover:text-amber-500 hover:text-xl hover:animate-bounce hover:h-auto"
+                <a href="Index.html"><img class="w-40 m-auto hover:text-amber-500 hover:text-xl hover:animate-bounce"
                         src="img/Logouxui.png" alt=""></a>
             </figure>
             <ul>
@@ -76,53 +76,24 @@
     </header>
     <main class="bg-slate-100 p-10 min-h-screen absolute right-0 w-full mt-16 lg:w-10/12">
 
-        <!-- ---------------------BANNER --------------------- -->
-
-        <section class="flex flex-col h-100 mb-12 xl:flex-row xl:h-80">
-            <div class="bg-zinc-900 flex flex-col w-full xl:w-7/12 md:flex-row md:flex-row">
-                <div class="w-full p-6 xl:w-6/12">
-                    <p class="text-white">Encuesta - Febrero</p>
-                    <p class="text-4xl font-semibold text-white mb-6">¿Qué programa utilizas para diseñar prototipos?
-                    </p>
-                    <button class="bg-amber-500 w-fit text-white py-2 px-10 rounded flex justify-center">Votar</button>
-                </div>
-                <figure class="w-full flex flex-wrap content-end  xl:w-6/12">
-                    <img src="img/prototipo.png" alt="">
-                </figure>
-            </div>
-            <div class="flex  xl:flex-row xl:w-5/12 xl:flex-wrap">
-                <div class="flex w-full">
-                    <div class="bg-white basis-1/3 p-6 flex justify-center"><img class="w-16 m-auto"
-                            src="img/480px-Figma-logo.svg.png" alt="">
-                    </div>
-                    <div class="bg-fuchsia-300 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                            src="img/Adobe_XD_CC_icon.svg.png" alt="">
-                    </div>
-                    <div class="bg-amber-200 basis-1/3  p-6 flex justify-center"> <img class="w-20 m-auto"
-                            src="img/sketch.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="w-full hidden sm:flex">
-                    <div class="flex w-full">
-                        <div class="bg-green-200 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/penpot.png" alt="">
-                        </div>
-                        <div class="bg-pink-300  basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/invision.jpeg" alt="">
-                        </div>
-                        <div class="bg-sky-100 basis-1/3 p-6 flex justify-center"> <img class="w-20 m-auto"
-                                src="img/marvel.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ------------------------SECCIÓN 1 ----------------------------- -->
         <section>
-            <h2 class="text-3xl font-semibold mb-5">Libros destacados</h2>
-            <!-- <section class="grid grid-cols-4 gap-8 my-4"> -->
-            <section class="grid grid-cols-1 mb-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+            <header>
+                <h1 class="text-4xl font-semibold m-2 flex justify-center">Libros</h1>
+                <nav class="mb-5">
+                    <ul class="flex justify-center">
+                        <li class="m-4">Todos</li>
+                        <li class="m-4">Interfaz<span
+                                class="bg-purple-700 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UI</span>
+                        </li>
+                        <li class="m-4">Experiencia<span
+                                class="bg-cyan-400 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UX</span>
+                        </li>
+                        <li class="m-4">Código</li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="grid grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
 
                 <!-- ----------CARD 1 --------------------- -->
                 <a href="ficha_libro.html" class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
@@ -146,18 +117,17 @@
                 <!-- ----------CARD 2 --------------------- -->
                 <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
                     <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-40" src="img/leanux.jpg" alt="Portada libro">
+                        <img class="scale-100 max-h-40" src="img/css-ediccion-2019.jpg" alt="Portada libro">
                     </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">Lean UX: Cómo aplicar los
-                        principios Lean a la mejora de la experiencia de usuario</h3>
-                    <p> Jeff Gothelf</p>
+                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">CSS. Edición 2019 (GUÍAS PRÁCTICAS) </h3>
+                    <p>Emiliano Barrios Alfonso</p>
                     <div class="flex items-center justify-between mt-8">
                         <figure class="h-5 flex">
                             <img class="h-full" src="img/star-solid.svg" alt="">
                             <img class="h-full" src="img/star-solid.svg" alt="">
                             <img class="h-full" src="img/star-solid.svg" alt="">
                             <img class="h-full" src="img/star-solid.svg" alt="">
-                            <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+                            <img class="h-full" src="img/star-solid.svg" alt="">
                         </figure>
                         <img class="h-6" src="img/heart-light 1.svg" alt="">
                     </div>
@@ -202,51 +172,89 @@
                         <img class="h-6" src="img/heart-light 1.svg" alt="">
                     </div>
                 </div>
+ <!-- ----------CARD 1 --------------------- -->
+ <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+    <Figure class="w-full h-48 flex justify-center items-center">
+        <img class="scale-100 max-h-40" src="img/investigacion-ux.jpg"  alt="Portada libro">
+    </Figure>
+    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">Investigación UX: Métodos y herramientas para diseñar Experiencia de Usuarios</h3>
+    <p>Jorge Barahona Ch.</p>
+    <div class="flex items-center justify-between mt-8">
+        <figure class="h-5 flex">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+        </figure>
+        <img class="h-6" src="img/heart-light 1.svg" alt="">
+    </div>
+ </div>
+</a>
+<!-- ----------CARD 2 --------------------- -->
+<div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+    <Figure class="w-full h-48 flex justify-center items-center">
+        <img class="scale-100 max-h-40" src="img/leanux.jpg" alt="Portada libro">
+    </Figure>
+    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">Lean UX: Cómo aplicar los
+        principios Lean a la mejora de la experiencia de usuario</h3>
+    <p> Jeff Gothelf</p>
+    <div class="flex items-center justify-between mt-8">
+        <figure class="h-5 flex">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+        </figure>
+        <img class="h-6" src="img/heart-light 1.svg" alt="">
+    </div>
+</div>
+<!-- ----------CARD 3 --------------------- -->
+<div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6 hidden lg:block">
+    <Figure class="w-full h-48 flex justify-center items-center">
+        <img class="scale-100 max-h-40" src="img/libro-html.jpg"
+            alt="Portada libro">
+    </Figure>
+    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">Curso de desarrollo Web. HTML, CSS y JavaScript.</h3>
+    <p>Mario Rubiales Gómez</p>
+    <div class="flex flex-columns items-center justify-between mt-8">
+        <figure class="h-5 flex flex-columns">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+        </figure>
+        <img class="h-6" src="img/heart-light 1.svg" alt="">
+    </div>
+</div>
+<!-- ----------CARD 4 --------------------- -->
+<div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6 hidden 2xl:block">
+    <Figure class="w-full h-48 flex justify-center items-center">
+        <img class="scale-100 max-h-40" src="img/diseñointeligente.jpg" alt="Portada libro">
+    </Figure>
+    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">Diseño Inteligente. Edición actualizada. Las 100 cosas que todo diseñador necesita saber sobre las personas </h3>
+    <p>Susan M. Weinschenk</p>
+    <div class="flex items-center justify-between mt-8">
+        <figure class="h-5 flex ">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid.svg" alt="">
+            <img class="h-full" src="img/star-solid-stroke.svg" alt="">
+        </figure>
+        <img class="h-6" src="img/heart-light 1.svg" alt="">
+    </div>
+</div>
+
+
             </section>
-            <button class="w-full flex justify-end mb-8 hover:text-amber-500"><a href="Libros.html"> Ver más recursos</a></button>
         </section>
 
-        <!-- ------------------------SECCIÓN 2 ----------------------------- -->
-        <section>
-            <h2 class="text-3xl font-semibold mb-5">Programas más populares</h2>
-            <!-- <section class="grid grid-cols-4 gap-8 my-4"> -->
-            <section class="grid grid-cols-1 mb-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+       
 
-                <!-- ----------CARD 1 --------------------- -->
-                <a href="ficha_libro.html" class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/tailwind.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">TailwindCSS</h3>
-
-                </a>
-                <!-- ----------CARD 2 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/Hotjar.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900">Hotjar</h3>
-
-                </div>
-                <!-- ----------CARD 3 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden  hover:shadow-lg hover:duration-200 bg-white p-6 hidden lg:block">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/userzoom.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">UserZoom</h3>
-
-                </div>
-                <!-- ----------CARD 4 --------------------- -->
-                <div class="max-w-sn h-auto rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6 hidden 2xl:block">
-                    <Figure class="w-full h-48 flex justify-center items-center">
-                        <img class="scale-100 max-h-20" src="img/480px-Figma-logo.svg.png" alt="Portada libro">
-                    </Figure>
-                    <h3 class="text-xl font-semibold my-4 flex justify-center text-slate-900 ">Figma</h3>
-                </div>
-            </section>
-            <button class="w-full flex justify-end mb-8 hover:text-amber-500"><a href="programas.html"> Ver más recursos</a></button>
-        </section>
-
+       
     </main>
 
 </body>

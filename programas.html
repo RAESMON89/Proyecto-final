@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <aside class="bg-slate-900 h-full col-span-2 w-2/12 hidden lg:block fixed">
+        <section class="h-4/5">
+            <figure class="w-full mb-10 mt-8 ">
+                <a href="Index.html"><img class="w-40 m-auto hover:text-amber-500 hover:text-xl hover:animate-bounce"
+                        src="img/Logouxui.png" alt=""></a>
+            </figure>
+            <ul>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    <a href="programas.html">Programas</a></li>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    <a href="recursosui.html">Recursos UI</a></li>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    <a href="Libros.html">Libros</a></li>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    Blogs </li>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    Juegos </li>
+                <li
+                    class="text-white text-lg m-6 flex flex-row gap-4 justify-center hover:text-amber-500 hover:text-xl hover:animate-bounce">
+                    Otros </li>
+            </ul>
+        </section>
+        <section class="h-1/5">
+            <a class="text-white text-base m-2 flex gap-4 justify-center" href="">Terms of Service</a>
+            <a class="text-white text-base m-2 flex gap-4 justify-center" href="">Privacy Policy</a>
+            <p class="text-white text-base m-2 flex gap-4 justify-center">Raúl Estévez Montero</p>
+        </section>
+    </aside>
+    <header
+        class="bg-slate-900 h-16 flex items-center justify-between fixed right-0 w-full z-10 lg:w-10/12 lg:bg-slate-600">
+        <figure class=" ml-10 lg:hidden">
+            <a href="Index.html"><img class="w-20" src="img/Logouxui.png" alt=""></a> 
+        </figure>
+        <div class="hidden sm:block w-full">
+            <form class="h-10  flex mx-10" action="busqueda.html" method="get">
+                <select class="text-sm px-2 bg-slate-100 rounded-l border-r-2 border-gray-300" name="categorias"
+                    id="categorias">
+                    <option value="Todas las categorias">Todas las categorias</option>
+                    <option value="Programas">Programas</option>
+                    <option value="Recursos UI">Recursos UI</option>
+                    <option value="Libros">Libros</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Juegos">Juegos</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <input class="w-full p-2" type="text" name="search" placeholder="Buscar">
+                <input class="h-10 w-12 bg-amber-500 rounded-r p-2" src="img/magnifying-glass-light.svg" type="image" value="Buscar">
+            </form>
+        </div>
+        <div class="flex justify-end">
+            <button class="sm:hidden">
+                <img class="w-6 mr-4" src="img/magnifying-glass-light.svg" alt="">
+            </button>
+            <button class="lg:hidden">
+                <img class="w-6 mr-6" src="img/bars-regular 1.svg" alt="">
+            </button>
+        </div>
+
+    </header>
+    <main class="bg-slate-100 p-10 min-h-screen absolute right-0 w-full mt-16 lg:w-10/12">
+        <header>
+            <h1 class="text-4xl font-semibold m-2 flex justify-center">Programas</h1>
+            <nav class="mb-5">
+                <ul class="flex justify-center">
+                    <li class="m-4">Todos</li>
+                    <li class="m-4">Interfaz<span
+                            class="bg-purple-700 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UI</span>
+                    </li>
+                    <li class="m-4">Experiencia<span
+                            class="bg-cyan-400 text-sm p-0,5 px-1 m-1 text-white rounded-sm font-semibold">UX</span>
+                    </li>
+                    <li class="m-4">Código</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <section> CARD </section> -->
+        <section class="grid grid-cols-1 mb-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/480px-Figma-logo.svg.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Figma</h3>
+            </div>
+
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-red-500 text-base text-center p-1 text-white rounded-sm w-28">Código</div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/tailwind.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">TailwindCSS</h3>
+            </div>
+
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-cyan-400 text-base text-center p-1 text-white rounded-sm w-44">Experiencia de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/Hotjar.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Hotjar</h3>
+            </div>
+
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/sketch.jpeg" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Sketch</h3>
+            </div>
+
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-red-500 text-base text-center p-1 text-white rounded-sm w-28">Código</div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/Githug.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">GitHub</h3>
+            </div>
+
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/Adobe_XD_CC_icon.svg.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Adobe XD</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/invision.jpeg" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Invision</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-cyan-400 text-base text-center p-1 text-white rounded-sm w-44">Experiencia de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/userzoom.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">UserZoom</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-cyan-400 text-base text-center p-1 text-white rounded-sm w-44">Experiencia de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/flowmapp.svg" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">FlowMapp</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/penpot.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Penpot</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-red-500 text-base text-center p-1 text-white rounded-sm w-28">Código</div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/Bootstrap_logo.svg" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Bootstrap</h3>
+            </div>
+
+            <div class="max-w-sn  rounded-xl overflow-hidden hover:shadow-lg hover:duration-200 bg-white p-6">
+                <div class="bg-purple-700 text-base text-center p-1 text-white rounded-sm w-40">Interfaz de usuario
+                </div>
+                <Figure class="w-full h-48 flex justify-center items-center">
+                    <img class="scale-100 max-h-20" src="img/marvel.png" alt="Logo FIGMA">
+                </Figure>
+                <h3 class="text-xl font-semibold text-slate-900 my-4 flex justify-center font-bold">Marvel</h3>
+            </div>
+
+
+        </section>
+
+    </main>
+</body>
